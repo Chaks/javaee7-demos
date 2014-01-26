@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+       
+<tiles-definitions>
+  <definition name="default" template="/WEB-INF/layout/siteLayout.jsp">
+    <put-attribute name="pageTitle" value="Customer Management"/> 
+    <put-attribute name="header" value="/WEB-INF/content/common/header.jsp"/> 
+    <put-attribute name="footer" value="/WEB-INF/content/common/footer.jsp"/>
+  </definition>
+  <definition name="login.tile" extends="default"> 
+    <put-attribute name="pageTitle" value="Login"/> 
+    <put-attribute name="body" value="/WEB-INF/content/portal/login.jsp"/>
+  </definition>
+  <definition name="landing.tile" extends="default"> 
+    <put-attribute name="pageTitle" value="Customer Management"/>
+    <put-attribute name="body" value="/WEB-INF/content/portal/landing.jsp"/>
+  </definition>
+  <definition name="customerLanding.tile" extends="default"> 
+    <put-attribute name="pageTitle" value="Customer Management"/>
+    <put-attribute name="body" value="/WEB-INF/content/portal/customer.jsp"/>
+  </definition>
+</tiles-definitions>
